@@ -28,4 +28,4 @@ jobs:
       with:
         ruby-version: 2.7
     - name: Run tests
-      run: rspec
+      run: bundle exec rspec
