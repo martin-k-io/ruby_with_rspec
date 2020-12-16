@@ -24,3 +24,8 @@ class SausageLink
     3
   end
 end
+
+RSpec.describe SausageLink do
+  subject { described_class.new }
+  include_examples 'a Ruby object with three elements'
+end
