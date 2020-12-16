@@ -1,4 +1,12 @@
 RSpec.describe 'before and after hooks' do
+  before(:context) do
+    puts 'Before context'
+  end
+
+  before(:context) do
+    puts 'After context'
+  end
+
   before(:example) do
     puts 'Before example'
   end
