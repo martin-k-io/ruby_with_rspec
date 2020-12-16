@@ -8,9 +8,8 @@ class Card
 end
 
 RSpec.describe Card do
-  def card
-    Card.new('Ace', 'Spades')
-  end
+  # let reduces overall used memory do to its memoization nature
+  let!(:card) { Card.new('Ace', 'Spades') } # similar to before
 
   it 'has a rank and that rank can change' do # example 1
     expect(card.rank).to eq('Ace')
