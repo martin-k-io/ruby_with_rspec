@@ -16,7 +16,7 @@ class Garage
   end
 end
 
-RSpec.decribe Garage do
+RSpec.describe Garage do
   let(:car) { instance_double(Car) }
 
   before do
